@@ -1,0 +1,50 @@
+alertaction      Configure alert actions.
+Valid parameters are one of:
+event=powersupply         Set power supply failure action(s).
+event=powersupplywarn     Set power supply warning action(s).
+event=tempwarn            Set temperature warning action(s).
+event=tempfail            Set temperature failure action(s).
+event=fanwarn             Set fan speed warning action(s).
+event=fanfail             Set fan speed failure action(s).
+event=voltwarn            Set voltage warning action(s).
+event=voltfail            Set voltage failure action(s).
+event=intrusion           Set chassis intrusion action(s).
+event=redundegrad         Set redundancy degraded action(s).
+event=redunlost           Set redundancy lost action(s).
+event=memprefail          Set memory pre-failure action(s).
+event=memfail             Set memory failure action(s).
+event=hardwarelogwarn     Set hardware log warning action(s).
+event=hardwarelogfull     Set hardware log full action(s).
+event=processorwarn       Set processor warning action(s).
+event=processorfail       Set processor failure action(s).
+event=watchdogasr         Set watchdog asr action(s).
+event=batterywarn         Set battery warning action(s).
+event=batteryfail         Set battery failure action(s).
+event=systempowerwarn     Set system power warning action(s).
+event=systempowerfail     Set system power failure action(s).
+event=systempeakpower     Set system peak power action(s).
+event=removableflashmediapresent       Set removable flash media present action(s).
+event=removableflashmediaremoved       Set removable flash media removed action(s).
+event=removableflashmediafail	  Set removable flash media failure action(s).
+
+Following events are applicable if Storage Management is installed
+event=storagesyswarn                Set Storage System warning action(s).
+event=storagesysfail                Set Storage System failure action(s).
+event=storagectrlwarn               Set Storage Controller warning action(s).
+event=storagectrlfail               Set Storage Controller failure action(s).
+event=pdiskwarn                     Set Physical Disk warning action(s).
+event=pdiskfail                     Set Physical Disk failure action(s).
+event=vdiskwarn                     Set Virtual Disk warning  action(s).
+event=vdiskfail                     Set Virtual Disk failure action(s).
+event=enclosurewarn                 Set Enclosure warning action(s).
+event=enclosurefail                 Set Enclosure failure action(s).
+event=storagectrlbatterywarn        Set Storage Controller Battery warning action(s).
+event=storagectrlbatteryfail        Set Storage Controller Battery failure action(s).
+
+For one event, either specify clearall or other action(s):
+alert=<true|false>        Enable / disable console alert.
+broadcast=<true|false>    Enable / disable broadcast message.
+clearall=<true>           Clear all actions for this event.
+execappath=<string>       Set absolute path for executable application.
+execapp=<false>           Disable executable application.
+
