@@ -1,0 +1,24 @@
+127.0.0.1	localhost
+#127.0.1.1	QMaster.sas.upenn.edu physics.upenn.edu math.upenn.edu hep.upenn.edu	QMaster
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+
+#Compute nodes = 10.0.1.2x
+10.0.1.20   Qmaster
+10.0.1.21   Still1
+10.0.1.22   Still2
+10.0.1.23   Still3
+10.0.1.24   Still4
+
+#Storage nodes = 10.0.1.3x
+10.0.1.30  pot0
+10.0.1.31  pot1
+
+#Manager nodes 
+10.0.1.1  paper1
+10.0.1.39  LacieMaster
